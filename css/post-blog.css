@@ -1,0 +1,53 @@
+    @import "bodystyle.css";
+    @import "footer.css";
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(30px, auto);
+        gap: 6px;
+        grid-template-areas: "hd" "nav" "post" "ft";
+    }
+    
+    @media (min-width: 600px) {
+        .container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 70px auto 30px;
+            grid-template-areas: "hd hd" "nav post" "ft ft";
+        }
+    }
+    
+    .box {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        color: #fffaf0;
+        border: 1px solid rebeccapurple;
+    }
+    
+    #nav {
+        display: flex;
+        grid-area: nav;
+        background-image: url("../assest/img/studying.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    @media (min-width: 600px) {
+        #post {
+            grid-area: post;
+            overflow: scroll;
+            padding: 0 30px 20px 30px;
+        }
+    }
+    
+    .post-article {
+        text-align: left;
+        grid-area: post;
+        text-align: center;
+        color: black;
+    }

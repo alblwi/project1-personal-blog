@@ -1,0 +1,100 @@
+@import "bodystyle.css";
+@import "footer.css";
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(30px, auto);
+    gap: 6px;
+    grid-template-areas: "hd" "main-post1" "main-post2" "social" "ft";
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid: 5px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 70px 350px 300px 40px;
+        grid-template-areas: "hd hd hd hd" "main-post1 main-post1 main-post2 main-post2" "social social social social" "ft ft ft ft";
+    }
+}
+
+.box {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #fffaf0;
+}
+
+#main1 {
+    grid-area: main-post1;
+    background-image: url("../assest/img/path-of-programming.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#main2 {
+    grid-area: main-post2;
+    background-image: url("../assest/img/how-to-choose.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#social1 {
+    grid-area: social;
+    background-image: url("../assest/img/java.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.black-box {
+    background-color: rgba(0, 0, 0, 0.5);
+    min-width: 60%;
+    max-width: 500px;
+    padding: 10px 20px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.link {
+    outline: none;
+    text-decoration: none;
+    color: #fffaf0;
+}
+
+.btn {
+    width: 200px;
+    text-align: center;
+    font-weight: 600;
+    padding: 15px 0;
+    margin: 15px 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border: 2px solid #f6aa1c;
+    border-radius: 3px;
+    color: #f6aa1c;
+    transition: all 0.3s;
+}
+
+.btn-primary:active {
+    background-color: #f6aa1c;
+    border: 2px solid #f6aa1c;
+}
+
+.btn-primary:hover {
+    background-color: #f6aa1c;
+    border: 2px solid #f6aa1c;
+    border-radius: 3px;
+    color: #fffaf0;
+}
