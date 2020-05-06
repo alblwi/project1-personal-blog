@@ -69,32 +69,20 @@
     color: #fffaf0;
 }
 
-.btn {
+.button {
     width: 200px;
     text-align: center;
     font-weight: 600;
-    padding: 15px 0;
+    padding: 15px;
     margin: 15px 0;
     cursor: pointer;
     display: inline-block;
-}
-
-.btn-primary {
-    background-color: transparent;
-    border: 2px solid #f6aa1c;
+    background-color: #8d8b87;
+    border: 2px solid #c4c2be;
     border-radius: 3px;
-    color: #f6aa1c;
-    transition: all 0.3s;
+    color: #c4c1bd;
 }
 
-.btn-primary:active {
-    background-color: #f6aa1c;
-    border: 2px solid #f6aa1c;
-}
-
-.btn-primary:hover {
-    background-color: #f6aa1c;
-    border: 2px solid #f6aa1c;
-    border-radius: 3px;
+.button:hover {
     color: #fffaf0;
 }
