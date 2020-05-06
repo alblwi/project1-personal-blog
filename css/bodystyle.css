@@ -88,11 +88,15 @@ p {
 u {
     text-decoration: underline;
     font-weight: 500;
-    letter-spacing: 0.05em;
+}
+
+i {
+    text-decoration-color: green;
+    font-style: italic;
 }
 
 a:hover {
-    color: goldenrod;
+    color: rgb(245, 227, 184);
 }
 
 .card {
